@@ -21,7 +21,8 @@
   "Type" : "AWS::S3::Bucket",
   "Properties" : {
     "AccessControl" : {"Ref": "Access"},
-    "BucketName" : {"Ref": "BucketName"}
+    "BucketName" : {"Ref": "BucketName"},
+    "Tags" : {"Ref":"CostCenter"}
     }
 }
 },
