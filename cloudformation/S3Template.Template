@@ -26,7 +26,7 @@
 }
 },
 "Outputs" : {
-"S3BucketSecureURL" : {
+"S3BucketName" : {
       "Value" :{ "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] }
      },
       "Description" : "Name of S3 bucket"
