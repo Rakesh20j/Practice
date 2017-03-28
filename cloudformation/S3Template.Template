@@ -22,14 +22,15 @@
   "Properties" : {
     "AccessControl" : {"Ref": "Access"},
     "BucketName" : {"Ref": "BucketName"},
-    "Tags" : {"Ref":"CostCenter"}
+    "Tags" : [{"Key":"CostCenter","Value":{"Ref":"CostCenter"}}]
     }
 }
 },
 "Outputs" : {
 "S3BucketName" : {
-      "Value" :{ "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] }
-     },
+      "Value" :{ "Fn::GetAtt" : [ "S3Bucket", "DomainName" ] },
+
       "Description" : "Name of S3 bucket"
+    }
    }
 }
